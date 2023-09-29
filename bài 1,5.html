@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let baiKiemTra=+prompt('Nhập điểm bài kiểm tra')
+        let diemGiuaKy=+prompt('Nhập điểm thi giữa kỳ')
+        let diemCuoiKy=+prompt('Nhập điểm thi giữa kỳ')
+        let diemTrungBinh=(baiKiemTra+diemGiuaKy+diemCuoiKy)/3
+        if (diemTrungBinh>=8&&diemTrungBinh<=10) {
+            alert('Xếp Loại Giỏi')
+        } else if (diemTrungBinh<8&&diemTrungBinh>=6.5) {
+            alert('Xếp Loại Khá')
+        } else if (diemTrungBinh<6.5&&diemTrungBinh>=5) {
+            alert('Xếp Loại Trung Bình')
+        } else if (diemTrungBinh<5) {
+            alert('xếp loại yếu')
+        } else {
+            alert('Nhập sai')
+        }
+            
+        
+    </script>
+</body>
+</html>
